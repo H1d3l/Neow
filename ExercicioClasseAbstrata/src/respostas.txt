@@ -1,0 +1,7 @@
+Respostas:
+
+1° - pois ela é uma classe mãe e possui 2 classes filhas que usam seus métodos. Os métodos usados pelas classes filhas.
+2° - Terei o polimorfismo de referência e posso receber qualquer objeto que seja uma Conta.
+3° - Terei de implementar o método atualiza na classe contaPoupança pq na classe Conta o método está como abstract.
+5° - Se existe eu não sei.
+6° - 
