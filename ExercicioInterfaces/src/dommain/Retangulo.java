@@ -12,5 +12,10 @@ public class Retangulo implements AreaCalculavel {
 		return this.largura*this.altura;
 		
 	}
+	@Override
+	public double CalculaArea() {
+		// TODO Auto-generated method stub
+		return calculaArea();
+	}
 
 }

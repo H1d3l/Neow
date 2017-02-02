@@ -9,5 +9,10 @@ public class Quadrado implements AreaCalculavel {
 	public double calculaArea(){
 		return this.lado*this.lado;
 	}
+	@Override
+	public double CalculaArea() {
+		// TODO Auto-generated method stub
+		return calculaArea();
+	}
 
 }
