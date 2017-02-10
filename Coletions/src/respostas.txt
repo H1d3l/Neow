@@ -1,0 +1,9 @@
+4° - O metodo sort da interface colletions do arquivo TestaOrdenação não funcionaria devido a falta do
+implementes Comparable na classe ContaPoupança. É necessário a interface comparable para que o metodo de
+sorteio possa ser usado pelo sort. 
+
+5° - Não foi necessário alterar absolutamente nada no código após a mudança para o LinkedList. Não teve nenhuma
+mudança visivel.
+
+6° - Usando o Colletions.reverse("lista") é possivel inverter a lista. Usando Colletions.shuffle("lista") é possivel
+embaralhar a lista. Usando Colletions.rotate("lista") é possivel rotacionar a lista.
