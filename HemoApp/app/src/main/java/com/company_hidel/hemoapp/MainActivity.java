@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_estoque) {
-            // Handle the camera action
+
+            // add as acoes
         } else if (id == R.id.nav_rank) {
 
         } else if (id == R.id.nav_saida_bolsa) {
