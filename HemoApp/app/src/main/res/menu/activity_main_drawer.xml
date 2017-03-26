@@ -3,34 +3,36 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_doador"
+            android:icon="@mipmap/ic_addoador"
+            android:title="Cadastro Doador"/>
+
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_rank"
+            android:icon="@mipmap/ic_rank2"
+            android:title="Rank Doadores" />
+
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_hospital"
+            android:icon="@mipmap/ic_hospital"
+            android:title="Cadastro Hospital"/>
+
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_estoque"
+            android:icon="@mipmap/ic_estoque"
+            android:title="Estoque" />
+
+        <item
+            android:id="@+id/nav_saida_bolsa"
+            android:icon="@mipmap/ic_saida"
+            android:title="Saida de Bolsas" />
+
+        <item
+            android:id="@+id/nav_campanha"
+            android:icon="@mipmap/ic_campnha"
+            android:title="Nova Campanha"/>
+
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
 
 </menu>
