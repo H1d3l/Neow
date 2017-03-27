@@ -8,5 +8,19 @@
     <string name="Email_Hemocenter">Hemocenter@gmail.com</string>
     <string name="add_doador">Adicionar doador</string>
     <string name="add_hospital">Adicionar Hospital</string>
+    <string name="add_idade">Idade:</string>
+    <string name="digite_idade">Ex: 18</string>
+    <string name="hint_nome">Ex: João</string>
+
+    <string-array name="tipo_sanguineo">
+        <item> A +</item>
+        <item> B +</item>
+        <item> AB +</item>
+        <item> O +</item>
+        <item> A -</item>
+        <item> B -</item>
+        <item> AB -</item>
+        <item> O -</item>
+    </string-array>
 
 </resources>

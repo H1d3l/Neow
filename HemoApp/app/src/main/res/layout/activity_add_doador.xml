@@ -14,16 +14,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
-        android:hint="Nome Completo : "/>
+        android:hint="Nome Completo: "/>
 
     <EditText
         android:id="@+id/ed_Nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:singleLine="true"
         android:inputType="textPersonName"
-        android:hint="Digite Nome Usuario"
+        android:hint="@string/hint_nome"
+
         />
 
     <TextView
@@ -31,16 +31,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
-        android:hint="Idade:"/>
+        android:hint="@string/add_idade"/>
     <EditText
         android:id="@+id/ed_idade"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
-        android:singleLine="true"
         android:inputType="number"
-        android:hint="Digite Idade"
+        android:hint="@string/digite_idade"
         />
 
     <TextView
@@ -51,19 +50,20 @@
         android:hint="Sexo : "/>
 
     <RadioGroup
+        android:id="@+id/bt_sexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/ed_sexoMasculino"
+            android:id="@+id/bt_masculino"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Masculino"
             />
         <RadioButton
-            android:id="@+id/ed_sexoFeminino"
+            android:id="@+id/bt_feminino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -97,14 +97,11 @@
         android:layout_marginTop="5dp"
         android:hint="Tipo Sanguineo :"/>
 
-    <EditText
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/tipo_sanguineo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="10dp"
-        android:hint="Digite tipo sanguíneo"
-        />
-
+        android:entries="@array/tipo_sanguineo" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -114,18 +111,16 @@
 
 
         <Button
-            android:id="@+id/buttonCancell"
+            android:id="@+id/bt_Cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Cancelar" />
 
         <Button
-            android:id="@+id/buttonConfirm"
+            android:id="@+id/bt_Confirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Confirmar"
-
-            />
+            android:hint="Confirmar" />
 
     </LinearLayout>
 
