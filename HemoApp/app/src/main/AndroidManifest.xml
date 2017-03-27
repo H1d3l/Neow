@@ -17,15 +17,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".AddDoadorActivity"
-            android:label="Cadastro Doador"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="@string/add_doador"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+
         <activity
             android:name=".AddHospitalActivity"
-            android:label="Cadastro Hospital"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="@string/add_hospital"
+            android:theme="@style/AppTheme">
+
+        </activity>
     </application>
 
 </manifest>

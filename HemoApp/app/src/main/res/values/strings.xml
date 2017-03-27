@@ -6,4 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="Hemocenter">Hemocenter Teresina</string>
     <string name="Email_Hemocenter">Hemocenter@gmail.com</string>
+    <string name="add_doador">Adicionar doador</string>
+    <string name="add_hospital">Adicionar Hospital</string>
+
 </resources>

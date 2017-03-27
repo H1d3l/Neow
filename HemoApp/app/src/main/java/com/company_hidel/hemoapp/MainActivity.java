@@ -1,5 +1,6 @@
 package com.company_hidel.hemoapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -20,10 +21,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -67,23 +67,38 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
+
+
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_estoque) {
+        if (id == R.id.nav_doador) {
+            add_doador(item);
 
-            // add as acoes
-        } else if (id == R.id.nav_rank) {
-
-        } else if (id == R.id.nav_saida_bolsa) {
+        }else if (id == R.id.nav_hospital ){
+            add_hospital(item);
+        }
+         else if (id == R.id.nav_saida_bolsa) {
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void add_doador(MenuItem item) {
+        Intent intent = new Intent(this,AddDoadorActivity.class);
+        startActivity(intent);
+    }
+
+    public void add_hospital(MenuItem item) {
+        Intent it = new Intent(this,AddHospitalActivity.class);
+        startActivity(it);
     }
 }

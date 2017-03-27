@@ -50,13 +50,18 @@
         android:layout_marginLeft="10dp"
         android:hint="Sexo : "/>
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/ed_sexoMasculino"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Masculino"
-        />
+            />
         <RadioButton
             android:id="@+id/ed_sexoFeminino"
             android:layout_width="wrap_content"
@@ -64,6 +69,9 @@
             android:layout_marginLeft="10dp"
             android:hint="Feminino"
             />
+
+
+    </RadioGroup>
 
     <TextView
         android:layout_width="wrap_content"

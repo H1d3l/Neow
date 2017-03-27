@@ -6,17 +6,20 @@
             android:id="@+id/nav_doador"
             android:icon="@mipmap/ic_addoador"
             android:title="Cadastro Doador"
+            android:onClick="add_doador"
             />
 
         <item
             android:id="@+id/nav_rank"
             android:icon="@mipmap/ic_rank2"
-            android:title="Rank Doadores" />
+            android:title="Rank Doadores"
+            />
 
         <item
             android:id="@+id/nav_hospital"
             android:icon="@mipmap/ic_hospital"
-            android:title="Cadastro Hospital"/>
+            android:title="Cadastro Hospital"
+            android:onClick="add_hospital"/>
 
         <item
             android:id="@+id/nav_estoque"
