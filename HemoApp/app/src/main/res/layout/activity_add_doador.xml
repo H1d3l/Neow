@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
-        android:hint="Nome Completo: "/>
+        android:hint="@string/Name"/>
 
     <EditText
         android:id="@+id/ed_Nome"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
-        android:hint="Sexo : "/>
+        android:hint="@string/Sexo"/>
 
     <RadioGroup
         android:id="@+id/bt_sexo"

@@ -22,5 +22,12 @@
         <item> AB -</item>
         <item> O -</item>
     </string-array>
+    <string name="title_activity_teste">teste</string>
+    <string name="Name">Nome Completo:</string>
+    <string name="Sexo">Sexo :</string>
+    <string name="data">Data</string>
+    <string name="Tipo_de_Doação">Tipo de Doação</string>
+    <string name="Livre">Livre</string>
+    <string name="Destinada">Destinada</string>
 
 </resources>
