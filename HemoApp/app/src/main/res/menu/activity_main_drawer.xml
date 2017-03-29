@@ -2,18 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_doador"
-            android:icon="@mipmap/ic_addoador"
-            android:title="Cadastro Doador"
-            android:onClick="add_doador"
-            />
 
-        <item
-            android:id="@+id/nav_rank"
-            android:icon="@mipmap/ic_rank2"
-            android:title="Rank Doadores"
-            />
 
         <item
             android:id="@+id/nav_hospital"

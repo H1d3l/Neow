@@ -40,6 +40,7 @@ public class AddDoadorActivity extends AppCompatActivity {
     }
 
     private void setClickListeners() {
+
         confirmar.setOnClickListener(getConfirmClickListener());
     }
 
@@ -53,7 +54,13 @@ public class AddDoadorActivity extends AppCompatActivity {
                 String sexoString = (sexo.getCheckedRadioButtonId() == R.id.bt_masculino) ? "Masculino" : "Feminino";
                 String tipoSanguineo = tipoSangue.getSelectedItem().toString();
                 Doador novo_doador = new Doador(nomeString,idadeString,sexoString,telefoneString,tipoSanguineo);
+
                 novo_doador.save();
+
+
+
+
+
                 finish();
                 Log.i(TAG, "Doador: " + novo_doador);
             }

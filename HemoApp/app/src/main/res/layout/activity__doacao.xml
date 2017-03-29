@@ -12,46 +12,65 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:hint="@string/Name"/>
+
     <EditText
         android:id="@+id/ed_Nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
         android:hint="@string/hint_nome"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:hint="@string/data"/>
 
     <EditText
         android:id="@+id/ed_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:inputType="date"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:hint="@string/Tipo_de_Doação"/>
+
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/rb_Livre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/Livre"
-            />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/Livre" />
+
         <RadioButton
             android:id="@+id/rb_Destinada"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/Destinada"
-            />
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/Destinada" />
 
     </RadioGroup>
+
 
 
 </LinearLayout>

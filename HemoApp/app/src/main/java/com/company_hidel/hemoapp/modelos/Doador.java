@@ -26,6 +26,13 @@ public class Doador extends SugarRecord{
         this.tipo_sanguineo = tipo_sanguineo;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getTipo_sanguineo() {
+        return tipo_sanguineo;
+    }
 
     @Override
     public String toString() {

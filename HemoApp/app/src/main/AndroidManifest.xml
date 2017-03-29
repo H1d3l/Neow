@@ -35,7 +35,10 @@
             android:name=".AddHospitalActivity"
             android:label="@string/add_hospital"
             android:theme="@style/AppTheme" />
-        <activity android:name=".DoacaoActivity"></activity>
+        <activity
+            android:name=".DoacaoActivity"
+            android:label="@string/Fomulario_de_Doacao"></activity>
+        <activity android:name=".ListaDoadoresActivity"></activity>
     </application>
 
 </manifest>

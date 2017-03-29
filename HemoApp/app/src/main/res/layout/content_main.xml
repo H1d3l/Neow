@@ -19,7 +19,9 @@
         android:layout_gravity="bottom|end"
         android:src="@drawable/plus_circle_outline"
         android:backgroundTint="@color/Vermelho"
-        app:layout_anchorGravity = "bottom|right|end">
+        android:onClick="nova_acao"
+        app:layout_anchorGravity = "bottom|right|end"
+        >
 
     </android.support.design.widget.FloatingActionButton>
 

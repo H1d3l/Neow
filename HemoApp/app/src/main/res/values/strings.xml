@@ -29,5 +29,14 @@
     <string name="Tipo_de_Doação">Tipo de Doação</string>
     <string name="Livre">Livre</string>
     <string name="Destinada">Destinada</string>
+    <string name="Fomulario_de_Doacao">Formulario de Doação</string>
+    <string name="add_doacao">Nova Doação</string>
+    <string name="Escolha_opcao">Escolha uma opção</string>
+    <string name="Lista_de_Doadores">Lista de Doadores</string>
 
+
+    <string-array name="EscolhaAdd">
+        <item> Novo Doador</item>
+        <item> Nova Doação</item>
+    </string-array>
 </resources>
