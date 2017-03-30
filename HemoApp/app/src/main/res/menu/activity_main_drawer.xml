@@ -9,6 +9,11 @@
             android:icon="@mipmap/ic_hospital"
             android:title="Cadastro Hospital"
             android:onClick="add_hospital"/>
+        <item
+            android:id="@+id/nav_DoadoresCadastrados"
+            android:icon="@mipmap/ic_hospital"
+            android:title="@string/Lista_de_Doadores"
+            android:onClick="list_doador"/>
 
         <item
             android:id="@+id/nav_estoque"

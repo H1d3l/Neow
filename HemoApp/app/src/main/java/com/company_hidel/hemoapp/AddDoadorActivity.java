@@ -36,35 +36,36 @@ public class AddDoadorActivity extends AppCompatActivity {
         sexo =(RadioGroup) findViewById(R.id.bt_sexo);
         tipoSangue = (Spinner) findViewById(R.id.tipo_sanguineo);
         confirmar = (Button) findViewById(R.id.bt_Confirm);
-        setClickListeners();
     }
 
-    private void setClickListeners() {
+    public void SalvarDoador(View view) {
+        String nomeString = nome.getText().toString();
+        String idadeString = idade.getText().toString();
+        String telefoneString = telefone.getText().toString();
+        String sexoString = (sexo.getCheckedRadioButtonId() == R.id.bt_masculino) ? "Masculino" : "Feminino";
+        String tipoSanguineo = tipoSangue.getSelectedItem().toString();
+        Doador novo_doador = new Doador(nomeString,idadeString,sexoString,telefoneString,tipoSanguineo);
+        Doador doador1 = Doador.findById(Doador.class,1);
+        
 
-        confirmar.setOnClickListener(getConfirmClickListener());
+        if(!nomeString.equals("") && !idadeString.equals("") && !telefoneString.equals("") && !sexoString.equals("") && !tipoSanguineo.equals("")){
+            novo_doador.save();
+            Toast.makeText(this,"Doador Cadastrado" ,Toast.LENGTH_SHORT).show();
+            finish();
+
+        }else{
+            Toast.makeText(this,"Dados invalidos" ,Toast.LENGTH_SHORT).show();
+            finish();
+
+
+
+
+        }
+
+        Log.i(TAG, "Doador: " + novo_doador);
+
+
     }
 
-    public View.OnClickListener getConfirmClickListener() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String nomeString = nome.getText().toString();
-                String idadeString = idade.getText().toString();
-                String telefoneString = telefone.getText().toString();
-                String sexoString = (sexo.getCheckedRadioButtonId() == R.id.bt_masculino) ? "Masculino" : "Feminino";
-                String tipoSanguineo = tipoSangue.getSelectedItem().toString();
-                Doador novo_doador = new Doador(nomeString,idadeString,sexoString,telefoneString,tipoSanguineo);
-
-                novo_doador.save();
-
-
-
-
-
-                finish();
-                Log.i(TAG, "Doador: " + novo_doador);
-            }
-        };
-    }
 
 }

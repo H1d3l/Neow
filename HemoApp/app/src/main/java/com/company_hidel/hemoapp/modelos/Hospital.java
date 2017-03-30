@@ -17,8 +17,6 @@ public class Hospital extends SugarRecord{
     private String uf;
     private int telefone;
     private String email;
-    @Ignore
-    private List<Doador> doadores_cadastrados;
 
 
     public Hospital(){

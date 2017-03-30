@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_hospital"
+            android:icon="@mipmap/ic_hospital"
+            android:title="Cadastro Hospital"
+            android:onClick="add_hospital"/>
+
+        <item
+            android:id="@+id/nav_estoque"
+            android:icon="@mipmap/ic_estoque"
+            android:title="Estoque" />
+
+        <item
+            android:id="@+id/nav_saida_bolsa"
+            android:icon="@mipmap/ic_saida"
+            android:title="Saida de Bolsas" />
+
+        <item
+            android:id="@+id/nav_campanha"
+            android:icon="@mipmap/ic_campnha"
+            android:title="Nova Campanha"/>
+
+    </group>
+
+
+</menu>

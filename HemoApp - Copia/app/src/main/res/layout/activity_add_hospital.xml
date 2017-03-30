@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.company_hidel.hemoapp.AddHospitalActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nome Hospital: "
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/ed_nomeHospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="textAutoComplete"
+        android:layout_marginTop="5dp"
+        android:hint="Nome do Hospital"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Endereço"/>
+
+    <EditText
+        android:id="@+id/ed_rua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Rua "/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:id="@+id/ed_numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:hint="Numero "/>
+
+        <EditText
+            android:id="@+id/ed_Cidade"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textAutoComplete"
+            android:hint="Cidade "/>
+
+        <EditText
+            android:id="@+id/ed_Uf"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textAutoComplete"
+            android:hint="UF "/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Contatos: "/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_TelefoneHospital"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="phone"
+            android:hint="Telefone"/>
+
+        <EditText
+            android:id="@+id/ed_EmailHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_horizontal">
+
+       <Button
+           android:id="@+id/ed_Cancelar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Cancelar"/>
+
+        <Button
+            android:id="@+id/ed_Confirme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

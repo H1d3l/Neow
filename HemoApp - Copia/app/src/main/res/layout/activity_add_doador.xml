@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.company_hidel.hemoapp.AddDoadorActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/Name"/>
+
+    <EditText
+        android:id="@+id/ed_Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_nome"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/add_idade"/>
+    <EditText
+        android:id="@+id/ed_idade"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:hint="@string/digite_idade"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/Sexo"/>
+
+    <RadioGroup
+        android:id="@+id/bt_sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bt_masculino"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Masculino"
+            />
+        <RadioButton
+            android:id="@+id/bt_feminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Feminino"
+            />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Contato: "/>
+
+
+        <EditText
+            android:id="@+id/ed_phone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:hint="Telefone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Tipo Sanguineo :"/>
+
+    <Spinner
+        android:id="@+id/tipo_sanguineo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/tipo_sanguineo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/bt_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cancelar" />
+
+        <Button
+            android:id="@+id/bt_Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

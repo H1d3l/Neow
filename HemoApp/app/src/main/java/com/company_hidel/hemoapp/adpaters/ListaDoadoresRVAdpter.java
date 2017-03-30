@@ -18,12 +18,12 @@ import java.util.List;
 
 public class ListaDoadoresRVAdpter extends RecyclerView.Adapter<ListaDoadoresRVAdpter.ViewHolder> {
     private final Context context;
-    private final List<Doador> lista_doadores;
+    private final List<Doador> lista_doador;
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater =  LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.lista_doadores,parent,false);
+        View view = inflater.inflate(R.layout.item_doador,parent,false);
         ViewHolder viewHolder = new ViewHolder(view);
 
         return viewHolder;
@@ -32,7 +32,7 @@ public class ListaDoadoresRVAdpter extends RecyclerView.Adapter<ListaDoadoresRVA
     @Override
     //Preenche a linha dos itens
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Doador doador = this.lista_doadores.get(position);
+        Doador doador = this.lista_doador.get(position);
         holder.tvDoadorNome.setText(doador.getNome());
         holder.tvDoadorSangue.setText(doador.getTipo_sanguineo());
 
@@ -41,7 +41,7 @@ public class ListaDoadoresRVAdpter extends RecyclerView.Adapter<ListaDoadoresRVA
     @Override
     //Retorna quant itens da lista
     public int getItemCount() {
-        return lista_doadores.size();
+        return lista_doador.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
@@ -58,10 +58,10 @@ public class ListaDoadoresRVAdpter extends RecyclerView.Adapter<ListaDoadoresRVA
             }
         }
 
-        public ListaDoadoresRVAdpter(Context context, List<Doador>lista_doadores){
+        public ListaDoadoresRVAdpter(Context context, List<Doador>lista_doador){
 
             this.context = context;
-            this.lista_doadores = lista_doadores;
+            this.lista_doador = lista_doador;
         }
 
 

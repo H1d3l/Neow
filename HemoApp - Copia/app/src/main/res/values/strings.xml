@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">HemoApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="Hemocenter">Hemocenter Teresina</string>
+    <string name="Email_Hemocenter">Hemocenter@gmail.com</string>
+    <string name="add_doador">Adicionar doador</string>
+    <string name="add_hospital">Adicionar Hospital</string>
+    <string name="add_idade">Idade:</string>
+    <string name="digite_idade">Ex: 18</string>
+    <string name="hint_nome">Ex: João</string>
+
+    <string-array name="tipo_sanguineo">
+        <item> A +</item>
+        <item> B +</item>
+        <item> AB +</item>
+        <item> O +</item>
+        <item> A -</item>
+        <item> B -</item>
+        <item> AB -</item>
+        <item> O -</item>
+    </string-array>
+    <string name="title_activity_teste">teste</string>
+    <string name="Name">Nome Completo:</string>
+    <string name="Sexo">Sexo :</string>
+    <string name="data">Data</string>
+    <string name="Tipo_de_Doação">Tipo de Doação</string>
+    <string name="Livre">Livre</string>
+    <string name="Destinada">Destinada</string>
+    <string name="Fomulario_de_Doacao">Formulario de Doação</string>
+    <string name="add_doacao">Nova Doação</string>
+    <string name="Escolha_opcao">Escolha uma opção</string>
+    <string name="Lista_de_Doadores">Lista de Doadores</string>
+
+
+    <string-array name="EscolhaAdd">
+        <item> Novo Doador</item>
+        <item> Nova Doação</item>
+    </string-array>
+</resources>
