@@ -3,12 +3,14 @@ package com.company_hidel.hemoapp;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -20,14 +22,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.company_hidel.hemoapp.adpaters.ListaDoacoesRvAdpter;
 import com.company_hidel.hemoapp.adpaters.ListaDoadoresRVAdpter;
+import com.company_hidel.hemoapp.modelos.Doacao;
 import com.company_hidel.hemoapp.modelos.Doador;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private RecyclerView rvDoacao;
 
+    private final String TAG = "MainActivity";
 
 
     @Override
@@ -47,8 +53,18 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        rvDoacao = (RecyclerView) findViewById(R.id.rv_lista_doacoes);
+        Log.i(TAG, "Entrou no onCreate ");
+
+
+
+
+
+
 
     }
+
+
 
     @Override
     public void onBackPressed() {
@@ -137,4 +153,18 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    public void onResume(){
+        super.onResume();
+
+        Log.i(TAG, "Entro no OnResume ");
+
+        List<Doacao> lista_doacao = Doacao.listAll(Doacao.class);
+        ListaDoacoesRvAdpter adapter = new ListaDoacoesRvAdpter(this, lista_doacao);
+        rvDoacao.setAdapter(adapter);
+        rvDoacao.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+
 }
+
+

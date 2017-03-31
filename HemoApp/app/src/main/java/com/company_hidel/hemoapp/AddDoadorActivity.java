@@ -46,7 +46,7 @@ public class AddDoadorActivity extends AppCompatActivity {
         String tipoSanguineo = tipoSangue.getSelectedItem().toString();
         Doador novo_doador = new Doador(nomeString,idadeString,sexoString,telefoneString,tipoSanguineo);
         Doador doador1 = Doador.findById(Doador.class,1);
-        
+
 
         if(!nomeString.equals("") && !idadeString.equals("") && !telefoneString.equals("") && !sexoString.equals("") && !tipoSanguineo.equals("")){
             novo_doador.save();

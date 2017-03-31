@@ -123,13 +123,15 @@
            android:id="@+id/ed_Cancelar"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:hint="Cancelar"/>
+           android:hint="Cancelar"
+           android:onClick="bt_Cancelar"/>
 
         <Button
             android:id="@+id/ed_Confirme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Confirmar"/>
+            android:hint="Confirmar"
+            android:onClick="bt_Confirmar"/>
 
     </LinearLayout>
 

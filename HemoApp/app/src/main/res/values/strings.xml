@@ -33,6 +33,9 @@
     <string name="add_doacao">Nova Doação</string>
     <string name="Escolha_opcao">Escolha uma opção</string>
     <string name="Lista_de_Doadores">Lista de Doadores</string>
+    <string name="Insira_Dados">Insira Dados</string>
+    <string name="nome_paciente">Paciente</string>
+    <string name="Destinacao">Destinatário</string>
 
 
     <string-array name="EscolhaAdd">
